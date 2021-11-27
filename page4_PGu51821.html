@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Parth Gupta">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style_PGu51821.css" rel="stylesheet">
+    <link href="css/nav_PGu51821.css" rel="stylesheet">
+    <link href="css/form_PGu51821.css" rel="stylesheet">
+    <script src="script/form_PGu51821.js"></script>
+    
+    <title>Final Project</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/Black logo - no background.png" alt="WCM- West Canada Mall">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2_PGu51821.html">Retail</a></li>
+            <li><a href="page3_PGu51821.html">Food</a></li>
+            <li><a href="page4_PGu51821.html">Shuttle</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div>
+            <h3>Shuttle Registration</h3>
+        </div>
+        
+        <section>
+            <form name="media" action="" method="get" enctype="application/x-www-form-urlencoded">
+
+                <fieldset id="f1">
+                    <legend>Trip Details</legend>
+                    <div>
+                        <label for="triptype">Type of Trip</label>
+                        <select name="triptype" id="triptype" required onchange="changeType(this)">
+                            <option value="oneway" id="o1">One-Way</option>
+                            <option value="round" id="o1">Roundtrip</option>
+                        </select>
+                    </div>
+                        <div id="dep">
+                            <label for="deptime">Departure Time</label>
+                            <span>
+                                <input type="radio" name="deptime" id="deptime" value="8am" required>8AM
+                                <input type="radio" name="deptime" id="deptime" value="9am" required>9AM
+                                <input type="radio" name="deptime" id="deptime" value="10am" required>10AM
+                            </span>
+                        </div>
+                        
+                        <div id="ret">
+                            <label for="rettime">Return Time</label>
+                            <span>
+                                <input type="radio" name="rettime" id="rettime" value="8pm" required disabled>8PM
+                                <input type="radio" name="rettime" id="rettime" value="9pm" required disabled>9PM
+                                <input type="radio" name="rettime" id="rettime" value="10pm" required disabled>10PM
+                            </span>
+                        </div>
+                    <fieldset>
+                        <legend>Passenger Details</legend>
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Joe" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Douglas" required>
+                        </div>
+                        <div>
+                            <label for="emailAdd">Email Address</label>
+                            <input type="email" name="emailAdd" id="emailAdd" placeholder="joedouglas@here.com" required>
+                        </div>
+                        <div>
+                            <label for="phno">Phone Number</label>
+                            <input type="tel" name="phno" id="phno" placeholder="XXXXXXXXXX" pattern="\d{10}" required>
+                        </div>
+                    </fieldset>
+
+                    <div id="s1">
+                        <input type="submit" name="submit" value="Submit Details" onclick="oksubmit(this.form)">
+                        <input type="reset" name="clear" value="Clear Form">
+                    </div>
+                </fieldset>
+            </form>
+
+        </section>
+        <section>
+            <table>
+                <tr>
+                    <th>Journey(From - To)</th>
+                    <th>Dep. Time</th>
+                    <th>Fare</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Station-11 to Mall front</td>
+                    <td>8am</td>
+                    <td rowspan="6">$2</td>
+                </tr>
+                <tr>
+                    <td>9am</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td>10am</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Mall front to Station-11
+                    </td>
+                    <td>8pm</td>
+                  
+                </tr>
+                <tr>
+                  
+                    <td>9pm</td>
+                  
+                </tr>
+                <tr>
+                  
+                    <td>10pm</td>
+                  
+                </tr>
+            </table>
+        </section>
+    </article>
+    <footer id="foo1">
+            &copy; 2021 West Canada Mall property.
+            <br>
+            Parth Gupta @ Fall 2021 Douglas College
+    </footer>
+</body>
+
+</html>

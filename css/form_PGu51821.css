@@ -1,0 +1,49 @@
+form{
+    padding-top: 10px;
+    
+    
+}
+#f1{
+    float:left;
+    width: 50%;
+}
+
+form>fieldset{
+    min-height: 250px;
+    border-radius: 8px;
+}
+fieldset > div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+fieldset > div > *{
+    flex: 1 1 200px;
+}
+legend{
+    padding: 5px;
+    background-color: steelblue;
+    border-radius: 5px;
+    color: snow;
+}
+#s1{
+    margin-top: 10px;
+}
+
+fieldset{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+input[type="submit"],input[type="reset"]{
+    background-color: steelblue;
+    color: snow;
+    border-radius: 5px;
+}
+
+table{
+    border: 1px solid black;
+    width: 50%;
+}
+td{
+    border: 1px solid black;
+}
